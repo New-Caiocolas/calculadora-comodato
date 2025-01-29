@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Comodato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Comodato</h2>
+        <label for="custo_dispenser">Custo do dispenser (R$):</label>
+        <input type="number" id="custo_dispenser" step="0.01">
+        
+        <label for="vida_util_dispenser">Vida útil do dispenser (meses):</label>
+        <input type="number" id="vida_util_dispenser">
+        
+        <label for="qtd_dispensers">Quantidade de dispensers:</label>
+        <input type="number" id="qtd_dispensers">
+        
+        <label for="custo_papel">Custo unitário do papel (R$):</label>
+        <input type="number" id="custo_papel" step="0.01">
+        
+        <label for="consumo_mensal">Consumo mensal (rolos):</label>
+        <input type="number" id="consumo_mensal">
+        
+        <label for="manutencao_dispenser">Custo de manutenção (R$):</label>
+        <input type="number" id="manutencao_dispenser" step="0.01">
+        
+        <label for="duracao_contrato">Duração do contrato (meses):</label>
+        <input type="number" id="duracao_contrato">
+        
+        <label for="margem_lucro">Margem de lucro (%):</label>
+        <input type="number" id="margem_lucro" step="0.01">
+        
+        <button onclick="calcularComodato()">Calcular</button>
+        
+        <div class="result" id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
